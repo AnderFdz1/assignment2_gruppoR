@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Funds TOgether - University of Turin research crowdfunding programme">
+    <title>Funds TOgether | Idea Ginger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- STICKY HEADER: both navigation bars remain visible -->
+    
+<header class="site-header">
+
+    <div class="main-header">
+
+        <!-- Left: project search and campaign action -->
+        <div class="header-left">
+
+            <label class="search-projects">
+                <span class="search-icon">⌕</span>
+                <input
+                    type="search"
+                    class="search-input"
+                    data-i18n-placeholder="nav.searchPlaceholder"
+                    data-i18n-aria-label="nav.searchAriaLabel"
+                    placeholder="Search for a project..."
+                    aria-label="Search for a project"
+                >
+            </label>
+
+            <a href="#launch-campaign" class="campaign-button" data-i18n="nav.launch">
+                Launch a Campaign
+            </a>
+
+        </div>
+
+        <!-- Center: brand -->
+        <a href="index.html" class="brand">
+            Idea Ginger
+        </a>
+
+        <!-- Right: secondary navigation -->
+        <nav class="utility-nav" aria-label="Utility navigation">
+            <a href="#faq" data-i18n="nav.faq">FAQ</a>
+            <a href="#contact" data-i18n="nav.contact">Contact</a>
+            <a href="#services" data-i18n="nav.services">Services</a>
+            <a href="#login" data-i18n="nav.login">Login</a>
+            <div class="language-selector">
+                <button
+                    class="language-button"
+                    type="button"
+                    aria-label="Change language"
+                    aria-expanded="false"
+                >
+                    <span id="current-language">EN</span>
+                    <span class="language-arrow">▾</span>
+                </button>
+
+                <div class="language-dropdown">
+                    <button type="button" data-language="en">
+                        🇬🇧 English
+                    </button>
+
+                    <button type="button" data-language="it">
+                        🇮🇹 Italiano
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Main section navigation -->
+    <div class="section-bar">
+        <nav aria-label="Main sections">
+            <a href="index.html" class="active" aria-current="page" data-i18n="nav.home">
+                Home
+            </a>
+
+            <a href="pages/explore.html" data-i18n="nav.explore">
+                Explore Projects
+            </a>
+        </nav>
+    </div>
+
+</header>
+
+
+
+    <main>
+
+        <!-- UNIVERSITY OF TURIN / FUNDS TOGETHER -->
+        <section class="intro-section content-section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.university">UNIVERSITY OF TURIN</p>
+                <h1>Funds TOgether</h1>
+                <p class="lead" data-i18n="home.subtitle">
+                    Crowdfunding for research, innovation and community participation.
+                </p>
+            </div>
+
+            <div class="intro-text">
+                <p data-i18n="home.intro1">
+                    Funds TOgether returns for its fourth edition, confirming its
+                    role in supporting research and innovation through crowdfunding
+                    and creating a bridge between scientific projects and the community.
+                </p>
+
+                <p data-i18n="home.intro2">
+                    The new edition opens its doors to research teams, offering
+                    training and personalised support to transform projects into
+                    effective crowdfunding campaigns, engage civil society and
+                    activate the contribution of the university community.
+                </p>
+
+                <p data-i18n="home.intro3">
+                    Crowdfunding gives researchers the opportunity to finance their
+                    ideas, open their laboratories to the community, communicate
+                    their work and build relationships with supporters and partners.
+                    It also helps teams develop skills in project management,
+                    fundraising and communication.
+                </p>
+
+                <p data-i18n="home.intro4">
+                    Funds TOgether was created to bring research closer to society
+                    and diversify its sources of funding. The initiative helps
+                    research teams turn ideas into concrete projects together with
+                    citizens, partners and local communities.
+                </p>
+
+                <p data-i18n="home.intro5">
+                    The University of Turin believes in open, participatory and
+                    impactful research. Through Funds TOgether, it provides tools,
+                    skills and resources to help research teams create effective
+                    fundraising campaigns.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- 2026 EDITION -->
+        <section class="edition-section content-section">
+
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.edition">2026 PROGRAMME</p>
+                <h2 data-i18n="home.editionTitle">An opportunity for research teams</h2>
+                <p class="section-intro" data-i18n="home.editionIntro">
+                    Funds TOgether supports research and innovation teams
+                    through project selection, campaign development
+                    and university co-funding.
+                </p>
+            </div>
+
+            <div class="edition-highlights">
+
+                <div class="edition-highlight">
+                    <span class="highlight-number" data-i18n="home.upTo">Up to 5</span>
+                    <h3 data-i18n="home.selectedProjects">Projects selected</h3>
+                    <p data-i18n="home.selectedDescription">
+                        Research and innovation projects can be selected
+                        for the 2026 programme.
+                    </p>
+                </div>
+
+                <div class="edition-highlight">
+                    <span class="highlight-number">€10,000</span>
+                    <h3 data-i18n="home.maxFundingTitle">Maximum co-funding</h3>
+                    <p data-i18n="home.maxFundingDescription">
+                        The University doubles the funds raised,
+                        up to this amount per project, when its campaign
+                        reaches 100% of its fundraising goal.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="edition-support">
+
+                <h3 data-i18n="home.teamSupport">What selected teams receive</h3>
+
+                <div class="support-points">
+
+                    <div class="support-point">
+                        <span class="support-icon">01</span>
+                        <div>
+                            <h4 data-i18n="home.support1Title">Personalised guidance</h4>
+                            <p data-i18n="home.support1Text">
+                                Support from Ginger campaign managers
+                                throughout the campaign.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="support-point">
+                        <span class="support-icon">02</span>
+                        <div>
+                            <h4 data-i18n="home.support2Title">Campaign development</h4>
+                            <p data-i18n="home.support2Text">
+                                Help designing, implementing and promoting
+                                the crowdfunding campaign.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="support-point">
+                        <span class="support-icon">03</span>
+                        <div>
+                            <h4 data-i18n="home.support3Title">University co-funding</h4>
+                            <p data-i18n="home.support3Text">
+                                The University doubles the funds raised
+                                when the campaign reaches its target,
+                                up to €10,000 per project.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FOUR PHASES -->
+        <section class="phases-section content-section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.phasesEyebrow">HOW THE PROGRAMME WORKS</p>
+                <h2 data-i18n="home.phasesTitle">Four phases, one shared goal</h2>
+                <p class="section-intro" data-i18n="home.phase1Text">
+                    From the first training session to the final co-funding,
+                    Funds TOgether supports research teams throughout the process.
+                </p>
+            </div>
+
+            <div class="phases-grid">
+
+                <article class="phase-card">
+                    <span class="phase-number">01</span>
+                    <h3 data-i18n="home.phase1Title">Training</h3>
+                    <p data-i18n="home.phase1Text">
+                        Research teams take part in practical and interactive
+                        training sessions on Ginger crowdfunding.
+                    </p>
+                </article>
+
+                <article class="phase-card">
+                    <span class="phase-number">02</span>
+                    <h3 data-i18n="home.phase2Title">Application and selection</h3>
+                    <p data-i18n="home.phase2Text">
+                        After the training, teams can submit their projects.
+                        The University of Turin selects the five best proposals.
+                    </p>
+                </article>
+
+                <article class="phase-card">
+                    <span class="phase-number">03</span>
+                    <h3 data-i18n="home.phase3Title">Support</h3>
+                    <p data-i18n="home.phase3Text">
+                        Ginger campaign managers help selected teams design,
+                        implement and promote their crowdfunding campaigns.
+                    </p>
+                </article>
+
+                <article class="phase-card">
+                    <span class="phase-number">04</span>
+                    <h3 data-i18n="home.phase4Title">Co-funding</h3>
+                    <p data-i18n="home.phase4Text">
+                        When a campaign reaches 100% of its goal, the University
+                        doubles the funds raised, up to €10,000 per project.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- RESULTS -->
+        <section class="results-section content-section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.resultsEyebrow">OUR IMPACT</p>
+                <h2 data-i18n="home.resultsTitle">Research supported by the community</h2>
+                <p class="section-intro" data-i18n="home.previousText">
+                    Funds TOgether has helped research and innovation projects
+                    connect with people and turn ideas into action.
+                </p>
+            </div>
+
+            <div class="stats-grid">
+
+                <div class="stat-card">
+                    <span class="stat-number">18</span>
+                    <span class="stat-label" data-i18n="home.statProjects">Projects</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">€354,000+</span>
+                    <span class="stat-label" data-i18n="home.statRaised">Funds raised</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">2,900+</span>
+                    <span class="stat-label" data-i18n="home.statSupporters">Donors</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">100%</span>
+                    <span class="stat-label" data-i18n="home.statSuccess">Success rate</span>
+                </div>
+
+                <div class="stat-card">
+                    <span class="stat-number">369%</span>
+                    <span class="stat-label" data-i18n="home.statOverfunding">Average overfunding</span>
+                </div>
+
+            </div>
+
+            <div class="previous-results">
+                <h3 data-i18n="home.previousEditions">Previous editions</h3>
+                <p data-i18n="home.previousText">
+                    Across previous editions, 13 research and innovation projects
+                    were selected. All achieved or exceeded their fundraising
+                    targets, collecting more than €312,000 in total, with an
+                    average overfunding of 369% and the support of more than
+                    2,400 people.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- GINGERINO NEWS -->
+        <section class="news-section content-section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.newsEyebrow">NEWS AND STORIES</p>
+                <h2 data-i18n="home.newsTitle">From The Gingerino</h2>
+                <p class="section-intro">
+                    News and stories about crowdfunding, research and Funds TOgether.
+                </p>
+            </div>
+
+            <div class="news-grid">
+
+                <article class="news-card">
+                    <div class="news-date">23 October 2026</div>
+                    <h3 data-i18n="home.news1Title">
+                        Funds TOgether: from the success of previous editions
+                        to new research projects
+                    </h3>
+                    <p data-i18n="home.news1Text">
+                        Funds TOgether returns with a new edition, building on
+                        the results of previous campaigns and supporting five
+                        new research projects.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">27 January 2022</div>
+                    <h3 data-i18n="home.news2Title">
+                        Crowdfunding to support scientific research:
+                        the University of Turin experience
+                    </h3>
+                    <p data-i18n="home.news2Text">
+                        An overview of the crowdfunding campaigns promoted by
+                        the University of Turin and the results achieved.
+                    </p>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-date">1 December 2021</div>
+                    <h3 data-i18n="home.news3Title">
+                        The University of Turin gives new momentum to scientific
+                        research through crowdfunding
+                    </h3>
+                    <p data-i18n="home.news3Text">
+                        The University of Turin launches Funds TOgether,
+                        its first crowdfunding initiative for scientific research
+                        in collaboration with Ginger.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- PARTNERS -->
+        <section class="partners-section content-section">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="home.partnersEyebrow">OUR NETWORK</p>
+                <h2 data-i18n="home.partnersTitle">Partners and collaborations</h2>
+                <p class="section-intro">
+                    Funds TOgether is part of a wider network of institutions,
+                    organisations and partners supporting participation and innovation.
+                </p>
+            </div>
+
+            <div class="partners-list">
+                <span>OIM Italia</span>
+                <span>BiUniCrowd – University of Milan Bicocca</span>
+                <span>University of Florence</span>
+                <span>University of Turin</span>
+                <span>Regione Marche</span>
+                <span>Emil Banca</span>
+                <span>BCC Milano</span>
+                <span>Banca delle Terre Venete</span>
+                <span>BCC Pordenonese e Monsile</span>
+                <span>LA BCC ravennate, forlivese e imolese</span>
+                <span>CiviBank</span>
+                <span>BCC Brianza e Laghi</span>
+                <span>BCC Garda</span>
+                <span>BCC Oglio e Serio</span>
+                <span>Sparkasse</span>
+                <span>RivieraBanca</span>
+                <span>Banca 360 FVG</span>
+                <span>BCC Busto Garolfo e Buguggiate</span>
+                <span>Comune di Forlì</span>
+                <span>Federcasse</span>
+                <span>Top Metro Fa Bene</span>
+                <span>Federazione BCC dell’Emilia-Romagna</span>
+                <span>Federazione Toscana BCC</span>
+                <span>Fondazione Policlinico Sant’Orsola</span>
+                <span>Fondazione Compagnia di San Paolo</span>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo">Idea Ginger</a>
+                <p data-i18n="footer.about">
+                    Crowdfunding for ideas, research and social innovation.
+                </p>
+            </div>
+
+            <div class="footer-column" id="services">
+                <h3 data-i18n="footer.explore">Explore</h3>
+                <a href="index.html" data-i18n="nav.home">Home</a>
+                <a href="pages/explore.html" data-i18n="nav.explore">Explore Projects</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#launch-campaign" data-i18n="nav.launch">Launch a campaign</a>
+            </div>
+
+            <div class="footer-column" id="faq">
+                <h3 data-i18n="footer.information">Information</h3>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="#contact" data-i18n="nav.contact">Contacts</a>
+                <a href="#footer" data-i18n="footer.about">About us</a>
+                <a href="#footer" data-i18n="home.phasesEyebrow">How it works</a>
+            </div>
+
+            <div class="footer-column" id="contact">
+                <h3>Account</h3>
+                <a href="#login" id="login">Partner login</a>
+                <a href="#login">Campaign manager login</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.terms">
+                Terms and conditions · Privacy · Cookies
+            </p>
+            <p>
+                © 2013–2026 Idea Ginger
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="js/language.js"></script>
+</body>
+</html>
