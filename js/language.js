@@ -95,14 +95,51 @@ const translations = {
         "explore.allCategories": "All categories",
         "explore.status": "Campaign status",
         "explore.allStatuses": "All statuses",
+        "explore.allProjects": "All projects",
         "explore.active": "Active",
         "explore.completed": "Completed",
+        "explore.campaignClosed": "Campaign closed",
         "explore.goal": "Funding goal",
         "explore.raised": "Raised",
         "explore.supporters": "Supporters",
         "explore.daysLeft": "days left",
         "explore.viewProject": "View project",
         "explore.noResults": "No projects match your search.",
+        "explore.showing": "Showing {shown} of {total} projects",
+        "explore.of": "of",
+        "explore.funded": "funded",
+        "explore.comingSoon": "Project pages are coming soon.",
+
+        // Explore - Categories
+        "explore.catEnvironment": "Environment",
+        "explore.catEducation": "Education",
+        "explore.catHealth": "Health",
+        "explore.catDigital": "Digital",
+        "explore.catSociety": "Society",
+        "explore.catCulture": "Culture",
+        "explore.catHeritage": "Heritage",
+
+        // Explore - Projects
+        "explore.p1Title": "Cool Streets: mapping urban heat with citizens",
+        "explore.p1Text": "Citizens and researchers map heat islands across Turin to design cooler, healthier neighbourhoods.",
+        "explore.p2Title": "A portable science lab for rural schools",
+        "explore.p2Text": "Bringing hands-on experiments to schools in the Alps, where access to laboratory equipment is limited.",
+        "explore.p3Title": "Decoding rare genetic diseases",
+        "explore.p3Text": "New sequencing tools to shorten the diagnostic journey for children with undiagnosed genetic conditions.",
+        "explore.p4Title": "Voices of Piedmont: an AI archive of local dialects",
+        "explore.p4Text": "Building an open digital archive that preserves and teaches the linguistic heritage of Piedmont.",
+        "explore.p5Title": "Growing together: inclusive urban gardens",
+        "explore.p5Text": "Creating accessible community gardens where residents, students and newcomers grow food and friendships.",
+        "explore.p6Title": "A new microscope for cancer research",
+        "explore.p6Text": "Upgrading our imaging lab to observe tumour cells in real time and test more effective treatments.",
+        "explore.p7Title": "Theatre for everyone: signed performances",
+        "explore.p7Text": "A season of accessible theatre with Italian Sign Language interpretation and sensory-friendly shows.",
+        "explore.p8Title": "Clean water sensors for Alpine communities",
+        "explore.p8Text": "Low-cost sensors helping mountain villages monitor water quality and protect local ecosystems.",
+        "explore.p9Title": "Open tools for early-career researchers",
+        "explore.p9Text": "Free, open-source software for managing data, citations and reproducible experiments.",
+        "explore.p10Title": "Reviving the University herbarium",
+        "explore.p10Text": "Restoring and digitising centuries-old botanical specimens for students, researchers and the public.",
 
         // Project details
         "project.back": "Back to projects",
@@ -243,14 +280,51 @@ const translations = {
         "explore.allCategories": "Tutte le categorie",
         "explore.status": "Stato della campagna",
         "explore.allStatuses": "Tutti gli stati",
+        "explore.allProjects": "Tutti i progetti",
         "explore.active": "Attiva",
         "explore.completed": "Conclusa",
+        "explore.campaignClosed": "Campagna conclusa",
         "explore.goal": "Obiettivo di raccolta",
         "explore.raised": "Raccolti",
         "explore.supporters": "Sostenitori",
         "explore.daysLeft": "giorni rimanenti",
         "explore.viewProject": "Scopri il progetto",
         "explore.noResults": "Nessun progetto corrisponde alla ricerca.",
+        "explore.showing": "Visualizzati {shown} di {total} progetti",
+        "explore.of": "di",
+        "explore.funded": "finanziato",
+        "explore.comingSoon": "Le pagine dei progetti saranno disponibili presto.",
+
+        // Explore - Categories
+        "explore.catEnvironment": "Ambiente",
+        "explore.catEducation": "Istruzione",
+        "explore.catHealth": "Salute",
+        "explore.catDigital": "Digitale",
+        "explore.catSociety": "Società",
+        "explore.catCulture": "Cultura",
+        "explore.catHeritage": "Patrimonio",
+
+        // Explore - Projects
+        "explore.p1Title": "Cool Streets: mappare il calore urbano con i cittadini",
+        "explore.p1Text": "Cittadini e ricercatori mappano le isole di calore di Torino per progettare quartieri più freschi e salutari.",
+        "explore.p2Title": "Un laboratorio scientifico portatile per le scuole di montagna",
+        "explore.p2Text": "Esperimenti pratici nelle scuole delle Alpi, dove l'accesso alle attrezzature di laboratorio è limitato.",
+        "explore.p3Title": "Decifrare le malattie genetiche rare",
+        "explore.p3Text": "Nuovi strumenti di sequenziamento per accorciare il percorso diagnostico dei bambini con patologie genetiche non diagnosticate.",
+        "explore.p4Title": "Voci del Piemonte: un archivio digitale dei dialetti locali",
+        "explore.p4Text": "Un archivio digitale aperto che preserva e insegna il patrimonio linguistico del Piemonte.",
+        "explore.p5Title": "Crescere insieme: orti urbani inclusivi",
+        "explore.p5Text": "Orti comunitari accessibili dove residenti, studenti e nuovi arrivati coltivano cibo e relazioni.",
+        "explore.p6Title": "Un nuovo microscopio per la ricerca sul cancro",
+        "explore.p6Text": "Potenziare il nostro laboratorio di imaging per osservare le cellule tumorali in tempo reale e testare terapie più efficaci.",
+        "explore.p7Title": "Teatro per tutti: spettacoli con la lingua dei segni",
+        "explore.p7Text": "Una stagione di teatro accessibile con interpretariato in Lingua dei Segni Italiana e spettacoli sensoriali.",
+        "explore.p8Title": "Sensori per l'acqua pulita nelle comunità alpine",
+        "explore.p8Text": "Sensori a basso costo che aiutano i villaggi di montagna a monitorare la qualità dell'acqua e proteggere gli ecosistemi locali.",
+        "explore.p9Title": "Strumenti aperti per giovani ricercatori",
+        "explore.p9Text": "Software libero e open source per gestire dati, citazioni ed esperimenti riproducibili.",
+        "explore.p10Title": "Far rivivere l'erbario dell'Università",
+        "explore.p10Text": "Restaurare e digitalizzare esemplari botanici secolari per studenti, ricercatori e pubblico.",
 
         // Project details
         "project.back": "Torna ai progetti",
@@ -304,6 +378,100 @@ const translations = {
 
 
 /* =========================================
+   LANGUAGE STORAGE
+========================================= */
+
+const LANGUAGE_STORAGE_KEY = "ideaGingerLanguage";
+
+function isValidLanguage(language) {
+    return typeof language === "string"
+        && translations[language] !== undefined;
+}
+
+function readLanguageCookie() {
+    try {
+        const cookie = document.cookie
+            .split("; ")
+            .find(item => item.startsWith(`${LANGUAGE_STORAGE_KEY}=`));
+
+        if (!cookie) {
+            return null;
+        }
+
+        const value = decodeURIComponent(
+            cookie.slice(LANGUAGE_STORAGE_KEY.length + 1)
+        );
+
+        return isValidLanguage(value) ? value : null;
+    } catch (error) {
+        return null;
+    }
+}
+
+function writeLanguageCookie(language) {
+    try {
+        document.cookie = [
+            `${LANGUAGE_STORAGE_KEY}=${encodeURIComponent(language)}`,
+            "path=/",
+            "max-age=31536000",
+            "SameSite=Lax"
+        ].join("; ");
+    } catch (error) {
+        console.warn("Language preference could not be saved in a cookie.", error);
+    }
+}
+
+function getSavedLanguage() {
+    let storedLanguage = null;
+
+    try {
+        storedLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY);
+    } catch (error) {
+        console.warn("Language preference could not be read from localStorage.", error);
+    }
+
+    if (isValidLanguage(storedLanguage)) {
+        return storedLanguage;
+    }
+
+    return readLanguageCookie() || "en";
+}
+
+function saveLanguagePreference(language) {
+    try {
+        localStorage.setItem(LANGUAGE_STORAGE_KEY, language);
+        return;
+    } catch (error) {
+        console.warn("Language preference could not be saved in localStorage.", error);
+    }
+
+    // Cookie fallback for contexts where localStorage is unavailable.
+    writeLanguageCookie(language);
+}
+
+
+/* =========================================
+   TRANSLATION HELPER
+========================================= */
+
+function getTranslation(key, language) {
+    const selectedLanguage = translations[language]
+        ? language
+        : "en";
+
+    const translation = translations[selectedLanguage][key];
+
+    if (translation !== undefined) {
+        return translation;
+    }
+
+    return translations.en[key] !== undefined
+        ? translations.en[key]
+        : key;
+}
+
+
+/* =========================================
    APPLY LANGUAGE
 ========================================= */
 
@@ -352,6 +520,18 @@ function applyLanguage(language) {
         currentLanguage.textContent = selectedLanguage.toUpperCase();
     }
 
+    // Keep the button's accessible name in sync with its visible label
+    const languageButton = document.querySelector(".language-button");
+
+    if (languageButton) {
+        languageButton.setAttribute(
+            "aria-label",
+            selectedLanguage === "it"
+                ? "Cambia lingua: IT"
+                : "Change language: EN"
+        );
+    }
+
     // Highlight the selected language in the dropdown
     document.querySelectorAll("[data-language]").forEach(button => {
         button.classList.toggle(
@@ -360,13 +540,43 @@ function applyLanguage(language) {
         );
     });
 
-    // Saving can be unavailable in restricted file:// browser contexts.
-    try {
-        localStorage.setItem("ideaGingerLanguage", selectedLanguage);
-    } catch (error) {
-        console.warn("Language preference could not be saved.", error);
-    }
+    // Persist the choice for every page (localStorage, cookie fallback).
+    saveLanguagePreference(selectedLanguage);
+
+    // Let page-specific scripts react to language changes.
+    document.dispatchEvent(
+        new CustomEvent("languagechange", {
+            detail: { language: selectedLanguage }
+        })
+    );
 }
+
+
+// Apply the saved language immediately so every page opens in the same language.
+// language.js is loaded at the end of the body, so the page elements already exist.
+applyLanguage(getSavedLanguage());
+
+// Keep other open pages/tabs in sync when the language changes.
+window.addEventListener("storage", event => {
+    if (event.key !== LANGUAGE_STORAGE_KEY || !isValidLanguage(event.newValue)) {
+        return;
+    }
+
+    applyLanguage(event.newValue);
+});
+
+// Re-apply the stored language when a page is restored from the back-forward cache.
+window.addEventListener("pageshow", event => {
+    if (!event.persisted) {
+        return;
+    }
+
+    const savedLanguage = getSavedLanguage();
+
+    if (savedLanguage !== document.documentElement.lang) {
+        applyLanguage(savedLanguage);
+    }
+});
 
 
 /* =========================================
@@ -377,17 +587,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const selector = document.querySelector(".language-selector");
     const languageButton = document.querySelector(".language-button");
-
-    // Restore previously selected language
-    let savedLanguage = "en";
-
-    try {
-        savedLanguage = localStorage.getItem("ideaGingerLanguage") || "en";
-    } catch (error) {
-        console.warn("Language preference could not be restored.", error);
-    }
-
-    applyLanguage(savedLanguage);
 
     if (!selector || !languageButton) {
         return;

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the research and innovation projects supported by Funds TOgether at the University of Turin.">
+    <title>Explore Projects | Funds TOgether</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/explore.css">
+</head>
+
+<body>
+
+    <!-- STICKY HEADER: both navigation bars remain visible -->
+    <header class="site-header">
+
+        <div class="main-header">
+
+            <!-- Left: project search and campaign action -->
+            <div class="header-left">
+
+                <label class="search-projects">
+                    <span class="search-icon">⌕</span>
+                    <input
+                        type="search"
+                        id="project-search"
+                        class="search-input"
+                        data-i18n-placeholder="nav.searchPlaceholder"
+                        data-i18n-aria-label="nav.searchAriaLabel"
+                        placeholder="Search for a project..."
+                        aria-label="Search for a project"
+                        autocomplete="off"
+                    >
+                </label>
+
+                <a href="../index.html#launch-campaign" class="campaign-button" data-i18n="nav.launch">
+                    Launch a Campaign
+                </a>
+
+            </div>
+
+            <!-- Center: brand -->
+            <a href="../index.html" class="brand">
+                Idea Ginger
+            </a>
+
+            <!-- Right: secondary navigation -->
+            <nav class="utility-nav" aria-label="Utility navigation">
+                <a href="../index.html#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+                <a href="../index.html#services" data-i18n="nav.services">Services</a>
+                <a href="../index.html#login" data-i18n="nav.login">Login</a>
+                <div class="language-selector">
+                    <button
+                        class="language-button"
+                        type="button"
+                        aria-label="Change language: EN"
+                        aria-expanded="false"
+                    >
+                        <span id="current-language">EN</span>
+                        <span class="language-arrow" aria-hidden="true">▾</span>
+                    </button>
+
+                    <div class="language-dropdown">
+                        <button type="button" data-language="en">
+                            🇬🇧 English
+                        </button>
+
+                        <button type="button" data-language="it">
+                            🇮🇹 Italiano
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <!-- Main section navigation -->
+        <div class="section-bar">
+            <nav aria-label="Main sections">
+                <a href="../index.html" data-i18n="nav.home">
+                    Home
+                </a>
+
+                <a href="explore.html" class="active" aria-current="page" data-i18n="nav.explore">
+                    Explore Projects
+                </a>
+            </nav>
+        </div>
+
+    </header>
+
+
+    <main>
+
+        <!-- PAGE INTRODUCTION -->
+        <section class="explore-hero">
+            <div class="explore-hero-inner">
+                <p class="eyebrow" data-i18n="explore.eyebrow">DISCOVER RESEARCH</p>
+                <h1 data-i18n="explore.title">Explore Projects</h1>
+                <p class="lead" data-i18n="explore.subtitle">
+                    Discover research and innovation projects supported by the
+                    University of Turin community.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- PROJECT LIST -->
+        <section class="explore-projects content-section">
+
+            <div class="project-toolbar">
+
+                <div class="filter-group" role="group" aria-label="Filter projects by status">
+                    <button
+                        type="button"
+                        class="filter-button active"
+                        data-filter="all"
+                        aria-pressed="true"
+                        data-i18n="explore.allProjects"
+                    >
+                        All projects
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="active"
+                        aria-pressed="false"
+                        data-i18n="explore.active"
+                    >
+                        Active
+                    </button>
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="completed"
+                        aria-pressed="false"
+                        data-i18n="explore.completed"
+                    >
+                        Completed
+                    </button>
+                </div>
+
+                <p class="project-count" id="project-count" aria-live="polite">
+                    Showing 10 of 10 projects
+                </p>
+
+            </div>
+
+
+            <div class="project-grid" id="project-grid">
+
+                <!-- 01 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="cool-streets"
+                    data-status="active"
+                    data-category="environment"
+                >
+                    <div class="project-media project-media--environment" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🌡️</span>
+                        <span class="project-category" data-i18n="explore.catEnvironment">Environment</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p1Title">
+                            Cool Streets: mapping urban heat with citizens
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p1Text">
+                            Citizens and researchers map heat islands across Turin
+                            to design cooler, healthier neighbourhoods.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €8,640
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €12,000
+                                </span>
+                            </span>
+                            <span class="project-percent">72%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="72"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 72%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">18</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 02 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="portable-lab"
+                    data-status="active"
+                    data-category="education"
+                >
+                    <div class="project-media project-media--education" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🧪</span>
+                        <span class="project-category" data-i18n="explore.catEducation">Education</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p2Title">
+                            A portable science lab for rural schools
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p2Text">
+                            Bringing hands-on experiments to schools in the Alps,
+                            where access to laboratory equipment is limited.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €4,250
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €10,000
+                                </span>
+                            </span>
+                            <span class="project-percent">43%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="43"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 43%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">9</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 03 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="rare-diseases"
+                    data-status="active"
+                    data-category="health"
+                >
+                    <div class="project-media project-media--health" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🧬</span>
+                        <span class="project-category" data-i18n="explore.catHealth">Health</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p3Title">
+                            Decoding rare genetic diseases
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p3Text">
+                            New sequencing tools to shorten the diagnostic journey
+                            for children with undiagnosed genetic conditions.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €13,950
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €15,000
+                                </span>
+                            </span>
+                            <span class="project-percent">93%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="93"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 93%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">4</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 04 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="piedmont-dialects"
+                    data-status="active"
+                    data-category="digital"
+                >
+                    <div class="project-media project-media--digital" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🗣️</span>
+                        <span class="project-category" data-i18n="explore.catDigital">Digital</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p4Title">
+                            Voices of Piedmont: an AI archive of local dialects
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p4Text">
+                            Building an open digital archive that preserves and
+                            teaches the linguistic heritage of Piedmont.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €6,120
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €8,000
+                                </span>
+                            </span>
+                            <span class="project-percent">77%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="77"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 77%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">24</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 05 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="inclusive-gardens"
+                    data-status="active"
+                    data-category="society"
+                >
+                    <div class="project-media project-media--society" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🌱</span>
+                        <span class="project-category" data-i18n="explore.catSociety">Society</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p5Title">
+                            Growing together: inclusive urban gardens
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p5Text">
+                            Creating accessible community gardens where residents,
+                            students and newcomers grow food and friendships.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €3,000
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €7,500
+                                </span>
+                            </span>
+                            <span class="project-percent">40%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="40"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 40%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">31</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 06 -->
+                <a
+                    href="#"
+                    class="project-card"
+                    data-project="cancer-microscope"
+                    data-status="active"
+                    data-category="health"
+                >
+                    <div class="project-media project-media--health" aria-hidden="true">
+                        <span class="project-status project-status--active" data-i18n="explore.active">Active</span>
+                        <span class="project-icon">🔬</span>
+                        <span class="project-category" data-i18n="explore.catHealth">Health</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p6Title">
+                            A new microscope for cancer research
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p6Text">
+                            Upgrading our imaging lab to observe tumour cells in
+                            real time and test more effective treatments.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €17,800
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €20,000
+                                </span>
+                            </span>
+                            <span class="project-percent">89%</span>
+                        </div>
+
+                        <div
+                            class="project-progress"
+                            role="progressbar"
+                            aria-valuenow="89"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 89%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days">
+                                <span class="days-value">12</span>
+                                <span data-i18n="explore.daysLeft">days left</span>
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 07 -->
+                <a
+                    href="#"
+                    class="project-card project-card--closed"
+                    data-project="signed-theatre"
+                    data-status="completed"
+                    data-category="culture"
+                >
+                    <div class="project-media project-media--culture" aria-hidden="true">
+                        <span class="project-status project-status--completed" data-i18n="explore.completed">Completed</span>
+                        <span class="project-icon">🎭</span>
+                        <span class="project-category" data-i18n="explore.catCulture">Culture</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p7Title">
+                            Theatre for everyone: signed performances
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p7Text">
+                            A season of accessible theatre with Italian Sign
+                            Language interpretation and sensory-friendly shows.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €11,430
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €9,000
+                                </span>
+                            </span>
+                            <span class="project-percent">127%</span>
+                        </div>
+
+                        <div
+                            class="project-progress project-progress--completed"
+                            role="progressbar"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 100%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days project-days--closed" data-i18n="explore.campaignClosed">
+                                Campaign closed
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 08 -->
+                <a
+                    href="#"
+                    class="project-card project-card--closed"
+                    data-project="water-sensors"
+                    data-status="completed"
+                    data-category="environment"
+                >
+                    <div class="project-media project-media--environment" aria-hidden="true">
+                        <span class="project-status project-status--completed" data-i18n="explore.completed">Completed</span>
+                        <span class="project-icon">💧</span>
+                        <span class="project-category" data-i18n="explore.catEnvironment">Environment</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p8Title">
+                            Clean water sensors for Alpine communities
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p8Text">
+                            Low-cost sensors helping mountain villages monitor
+                            water quality and protect local ecosystems.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €12,300
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €12,000
+                                </span>
+                            </span>
+                            <span class="project-percent">103%</span>
+                        </div>
+
+                        <div
+                            class="project-progress project-progress--completed"
+                            role="progressbar"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 100%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days project-days--closed" data-i18n="explore.campaignClosed">
+                                Campaign closed
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 09 -->
+                <a
+                    href="#"
+                    class="project-card project-card--closed"
+                    data-project="open-research-tools"
+                    data-status="completed"
+                    data-category="digital"
+                >
+                    <div class="project-media project-media--digital" aria-hidden="true">
+                        <span class="project-status project-status--completed" data-i18n="explore.completed">Completed</span>
+                        <span class="project-icon">💻</span>
+                        <span class="project-category" data-i18n="explore.catDigital">Digital</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p9Title">
+                            Open tools for early-career researchers
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p9Text">
+                            Free, open-source software for managing data, citations
+                            and reproducible experiments.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €6,780
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €6,000
+                                </span>
+                            </span>
+                            <span class="project-percent">113%</span>
+                        </div>
+
+                        <div
+                            class="project-progress project-progress--completed"
+                            role="progressbar"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 100%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days project-days--closed" data-i18n="explore.campaignClosed">
+                                Campaign closed
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 10 -->
+                <a
+                    href="#"
+                    class="project-card project-card--closed"
+                    data-project="university-herbarium"
+                    data-status="completed"
+                    data-category="heritage"
+                >
+                    <div class="project-media project-media--heritage" aria-hidden="true">
+                        <span class="project-status project-status--completed" data-i18n="explore.completed">Completed</span>
+                        <span class="project-icon">🌿</span>
+                        <span class="project-category" data-i18n="explore.catHeritage">Heritage</span>
+                    </div>
+
+                    <div class="project-body">
+                        <h2 class="project-title" data-i18n="explore.p10Title">
+                            Reviving the University herbarium
+                        </h2>
+                        <p class="project-description" data-i18n="explore.p10Text">
+                            Restoring and digitising centuries-old botanical
+                            specimens for students, researchers and the public.
+                        </p>
+
+                        <div class="project-progress-row">
+                            <span class="project-raised">
+                                €10,900
+                                <span class="project-goal">
+                                    <span data-i18n="explore.of">of</span> €10,000
+                                </span>
+                            </span>
+                            <span class="project-percent">109%</span>
+                        </div>
+
+                        <div
+                            class="project-progress project-progress--completed"
+                            role="progressbar"
+                            aria-valuenow="100"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                        >
+                            <span style="width: 100%"></span>
+                        </div>
+
+                        <div class="project-footer">
+                            <span class="project-days project-days--closed" data-i18n="explore.campaignClosed">
+                                Campaign closed
+                            </span>
+                            <span class="project-link">
+                                <span data-i18n="explore.viewProject">View project</span>
+                                <span aria-hidden="true">→</span>
+                            </span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+
+            <p class="explore-empty" id="no-results" data-i18n="explore.noResults" hidden>
+                No projects match your search.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer" id="footer">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">Idea Ginger</a>
+                <p data-i18n="footer.about">
+                    Crowdfunding for ideas, research and social innovation.
+                </p>
+            </div>
+
+            <div class="footer-column" id="services">
+                <h3 data-i18n="footer.explore">Explore</h3>
+                <a href="../index.html" data-i18n="nav.home">Home</a>
+                <a href="explore.html" data-i18n="nav.explore">Explore Projects</a>
+                <a href="../index.html#services" data-i18n="nav.services">Services</a>
+                <a href="../index.html#launch-campaign" data-i18n="nav.launch">Launch a campaign</a>
+            </div>
+
+            <div class="footer-column" id="faq">
+                <h3 data-i18n="footer.information">Information</h3>
+                <a href="../index.html#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Contacts</a>
+                <a href="#footer" data-i18n="footer.about">About us</a>
+                <a href="../index.html#footer" data-i18n="home.phasesEyebrow">How it works</a>
+            </div>
+
+            <div class="footer-column" id="contact">
+                <h3>Account</h3>
+                <a href="../index.html#login" id="login">Partner login</a>
+                <a href="../index.html#login">Campaign manager login</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p data-i18n="footer.terms">
+                Terms and conditions · Privacy · Cookies
+            </p>
+            <p>
+                © 2013–2026 Idea Ginger
+            </p>
+        </div>
+
+    </footer>
+
+    <!-- Placeholder feedback while project detail pages are not available -->
+    <div class="project-toast" id="project-toast" role="status" aria-live="polite" hidden>
+        <span data-i18n="explore.comingSoon">Project pages are coming soon.</span>
+    </div>
+
+    <script src="../js/language.js"></script>
+    <script src="../js/explore.js"></script>
+</body>
+</html>
