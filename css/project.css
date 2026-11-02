@@ -1,0 +1,500 @@
+/* Project detail page */
+
+.project-hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+    min-height: 500px;
+    background: #f6f7f9;
+}
+
+.project-hero-image {
+    min-height: 420px;
+}
+
+.project-hero-image img,
+.overview-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-hero-content {
+    align-self: center;
+    max-width: 650px;
+    padding: 70px 9%;
+}
+
+.project-hero-content h1 {
+    max-width: 620px;
+    margin-bottom: 20px;
+}
+
+.project-lead {
+    max-width: 560px;
+    color: #687586;
+    font-size: 1.2rem;
+}
+
+.project-attribution {
+    margin: 22px 0;
+    color: #526071;
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.share-button,
+.amount-button {
+    border: 1px solid #dfe4e9;
+    border-radius: 6px;
+    background: #ffffff;
+    color: #263b55;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+.share-button {
+    padding: 11px 16px;
+}
+
+.share-button:hover,
+.amount-button:hover {
+    border-color: #df765f;
+    color: #bd5e4f;
+}
+
+.share-feedback {
+    min-height: 1.4em;
+    margin-top: 8px;
+    color: #526071;
+    font-size: 0.85rem;
+}
+
+.funding-panel {
+    max-width: 1100px;
+    margin: -55px auto 0;
+    padding: 30px 35px;
+    position: relative;
+    z-index: 1;
+    background: #ffffff;
+    border: 1px solid #e6e9ed;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(35, 50, 70, 0.1);
+}
+
+.funding-heading,
+.progress-label,
+.progress-meta,
+.budget-label {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.funding-heading h2 {
+    font-size: 1.65rem;
+}
+
+.status-badge {
+    padding: 7px 13px;
+    border-radius: 20px;
+    background: #e4f4eb;
+    color: #23764a;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.funding-progress {
+    margin: 23px 0 25px;
+}
+
+.progress-label strong {
+    color: #263b55;
+    font-size: 1.35rem;
+}
+
+.progress-label span {
+    color: #bd5e4f;
+    font-weight: 800;
+}
+
+.progress-track,
+.budget-track {
+    overflow: hidden;
+    height: 13px;
+    margin: 12px 0 9px;
+    border-radius: 20px;
+    background: #edf0f3;
+}
+
+.progress-fill {
+    width: 72%;
+    height: 100%;
+    background: #e87567;
+}
+
+.progress-meta {
+    color: #687586;
+    font-size: 0.9rem;
+}
+
+.primary-button {
+    display: inline-block;
+    padding: 13px 22px;
+    border: 0;
+    border-radius: 6px;
+    background: #e98a00;
+    color: #ffffff;
+    font-weight: 800;
+    text-align: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.primary-button:hover {
+    background: #cf7600;
+    transform: translateY(-1px);
+}
+
+.project-nav {
+    max-width: 1100px;
+    margin: 30px auto 0;
+    padding: 0 25px 20px;
+    border-bottom: 1px solid #e6e9ed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px 35px;
+}
+
+.project-nav a {
+    padding: 8px 0;
+    color: #526071;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.project-nav a:hover {
+    color: #bd5e4f;
+}
+
+.project-section {
+    scroll-margin-top: 125px;
+}
+
+.overview-grid {
+    max-width: 1100px;
+    margin: 0 auto 45px;
+    display: grid;
+    grid-template-columns: 1fr 0.95fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.overview-copy h3 {
+    margin: 22px 0 9px;
+}
+
+.overview-copy h3:first-child {
+    margin-top: 0;
+}
+
+.overview-copy p,
+.overview-copy li,
+.budget-item p,
+.team-card p,
+.update-card p {
+    color: #687586;
+}
+
+.check-list {
+    margin-top: 13px;
+    padding-left: 20px;
+}
+
+.check-list li {
+    margin-bottom: 9px;
+    padding-left: 5px;
+}
+
+.overview-image {
+    min-height: 380px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.impact-grid,
+.team-grid,
+.updates-grid,
+.comments-list,
+.supporters-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.impact-card,
+.team-card,
+.update-card,
+.comment-card {
+    padding: 25px;
+    border: 1px solid #e6e9ed;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.impact-number {
+    display: block;
+    margin-bottom: 15px;
+    color: #df765f;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.impact-card h3,
+.team-card h3,
+.update-card h3 {
+    margin-bottom: 9px;
+}
+
+.funds-section,
+.updates-section {
+    background: #f6f7f9;
+}
+
+.budget-list {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.budget-item {
+    margin-bottom: 26px;
+}
+
+.budget-label strong {
+    color: #263b55;
+}
+
+.budget-label span {
+    color: #bd5e4f;
+    font-size: 1.15rem;
+    font-weight: 800;
+}
+
+.budget-track {
+    height: 11px;
+}
+
+.budget-fill {
+    height: 100%;
+    background: #e87567;
+}
+
+.budget-half { width: 50%; }
+.budget-third { width: 30%; }
+.budget-fifth { width: 20%; }
+
+.budget-item p {
+    margin-top: 8px;
+    font-size: 0.9rem;
+}
+
+.team-role,
+.update-date {
+    margin-bottom: 13px;
+    color: #df765f !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.avatar {
+    width: 72px;
+    height: 72px;
+    margin-bottom: 18px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: #f8d7c9;
+    color: #bd5e4f;
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.team-card {
+    min-height: 260px;
+}
+
+.update-card {
+    min-height: 245px;
+}
+
+.comments-section {
+    background: #ffffff;
+}
+
+.comments-list {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.comment-card {
+    min-height: 165px;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: baseline;
+    margin-bottom: 12px;
+}
+
+.comment-header h3 {
+    margin: 0;
+}
+
+.comment-header time {
+    flex: 0 0 auto;
+    color: #df765f;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.comment-card p {
+    color: #687586;
+}
+
+.supporters-section {
+    background: #f6f7f9;
+}
+
+.supporters-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.supporter-name {
+    padding: 18px 15px;
+    border: 1px solid #e6e9ed;
+    border-radius: 8px;
+    background: #ffffff;
+    color: #263b55;
+    font-weight: 700;
+    text-align: center;
+}
+
+.donation-section {
+    padding: 75px 8%;
+    background: #263b55;
+    color: #ffffff;
+    text-align: center;
+    scroll-margin-top: 125px;
+}
+
+.donation-content {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.donation-section .eyebrow {
+    color: #f7b19e;
+}
+
+.donation-section h2 {
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.donation-section p {
+    color: #d7dfe7;
+}
+
+.contribution-options {
+    margin: 27px 0 12px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.amount-button {
+    min-width: 78px;
+    padding: 12px 18px;
+}
+
+.amount-button.selected {
+    border-color: #e98a00;
+    background: #e98a00;
+    color: #ffffff;
+}
+
+.selected-contribution {
+    min-height: 1.5em;
+    font-size: 0.9rem;
+}
+
+.donation-button {
+    margin-top: 18px;
+}
+
+.checkout-note {
+    display: block;
+    margin-top: 13px;
+    color: #bdc9d5;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 800px) {
+    .project-hero,
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-hero-content {
+        padding: 50px 7%;
+    }
+
+    .project-hero-image {
+        min-height: 300px;
+    }
+
+    .funding-panel {
+        margin: 25px 6% 0;
+        padding: 25px;
+    }
+
+    .impact-grid,
+    .team-grid,
+    .updates-grid,
+    .comments-list,
+    .supporters-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .overview-image {
+        min-height: 280px;
+    }
+}
+
+@media (max-width: 520px) {
+    .funding-heading,
+    .progress-label,
+    .progress-meta,
+    .budget-label {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .progress-meta {
+        gap: 3px;
+    }
+
+    .project-nav {
+        justify-content: flex-start;
+        gap: 5px 20px;
+    }
+
+    .contribution-options {
+        gap: 8px;
+    }
+}

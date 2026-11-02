@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Cool Streets: Mapping Urban Heat with Citizens - a University of Turin research project.">
+    <title data-i18n="project.pageTitle">Cool Streets | Idea Ginger</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/project.css">
+</head>
+
+<body class="project-page">
+    <header class="site-header">
+        <div class="main-header">
+            <div class="header-left">
+                <label class="search-projects">
+                    <span class="search-icon">⌕</span>
+                    <input type="search" class="search-input"
+                        data-i18n-placeholder="nav.searchPlaceholder"
+                        data-i18n-aria-label="nav.searchAriaLabel"
+                        placeholder="Search for a project..." aria-label="Search for a project">
+                </label>
+                <a href="#donation" class="campaign-button" data-i18n="nav.launch">Launch a Campaign</a>
+            </div>
+
+            <a href="../index.html" class="brand">Idea Ginger</a>
+
+            <nav class="utility-nav" aria-label="Utility navigation">
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#login" data-i18n="nav.login">Login</a>
+                <div class="language-selector">
+                    <button class="language-button" type="button"
+                        aria-label="Change language" aria-expanded="false">
+                        <span id="current-language">EN</span>
+                        <span class="language-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" data-language="en">🇬🇧 English</button>
+                        <button type="button" data-language="it">🇮🇹 Italiano</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="section-bar">
+            <nav aria-label="Main sections">
+                <a href="../index.html" data-i18n="nav.home">Home</a>
+                <a href="explore.html" class="active" aria-current="page"
+                    data-i18n="nav.explore">Explore Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="project-hero">
+            <div class="project-hero-image">
+                <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85"
+                    data-i18n-alt="project.heroImageAlt"
+                    alt="Green plants and trees in a modern urban courtyard">
+            </div>
+            <div class="project-hero-content">
+                <p class="eyebrow" data-i18n="project.category">CLIMATE &amp; SUSTAINABILITY</p>
+                <h1 data-i18n="project.title">Cool Streets: Mapping Urban Heat with Citizens</h1>
+                <p class="project-lead" data-i18n="project.subtitle">Citizens and researchers map heat islands across Turin to design cooler,
+                    healthier neighbourhoods.</p>
+                <p class="project-attribution" data-i18n="project.attribution">A University of Turin research project</p>
+                <button class="share-button" id="shareProject" type="button">
+                    <span aria-hidden="true">↗</span> <span data-i18n="project.share">Share this project</span>
+                </button>
+                <p class="share-feedback" id="shareFeedback" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section class="funding-panel" aria-labelledby="funding-title">
+            <div class="funding-heading">
+                <div>
+                    <p class="eyebrow" data-i18n="project.campaignStatus">CAMPAIGN STATUS</p>
+                    <h2 id="funding-title" data-i18n="project.activeCampaign">Active campaign</h2>
+                </div>
+                <span class="status-badge" data-i18n="project.active">Active</span>
+            </div>
+            <div class="funding-progress">
+                <div class="progress-label">
+                    <strong data-i18n="project.amountRaised">€8,640 raised</strong>
+                    <span data-i18n="project.funded">72% funded</span>
+                </div>
+                <div class="progress-track" role="progressbar" data-i18n-aria-label="project.progressLabel" aria-label="Funding progress"
+                    aria-valuemin="0" aria-valuemax="100" aria-valuenow="72">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="progress-meta">
+                    <span data-i18n="project.fundingGoal">Funding goal: €12,000</span>
+                    <span data-i18n="project.daysRemaining">18 days remaining</span>
+                </div>
+            </div>
+            <a href="#donation" class="primary-button" data-i18n="project.supportButton">Support this project</a>
+        </section>
+
+        <nav class="project-nav" data-i18n-aria-label="project.sectionsLabel" aria-label="Project sections">
+            <a href="#overview" data-i18n="project.overview">Overview</a>
+            <a href="#funds" data-i18n="project.useOfFunds">Use of Funds</a>
+            <a href="#team" data-i18n="project.researchTeam">Research Team</a>
+            <a href="#updates" data-i18n="project.updates">News &amp; Updates</a>
+            <a href="#comments" data-i18n="project.comments">Comments</a>
+            <a href="#supporters" data-i18n="project.supportersNav">Supporters</a>
+        </nav>
+
+        <section class="project-section content-section" id="overview">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.overviewEyebrow">THE PROJECT</p>
+                <h2 data-i18n="project.overviewTitle">Understanding Turin's urban heat</h2>
+                <p class="section-intro" data-i18n="project.overviewIntro">Cool Streets brings local knowledge and research together to understand how
+                    heat affects everyday life across the city.</p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-copy">
+                    <h3 data-i18n="project.whyTitle">Why this matters</h3>
+                    <p data-i18n="project.whyText">Urban areas can be several degrees warmer than their surroundings. Dense construction,
+                        asphalt, limited shade and traffic trap heat, especially in neighbourhoods with fewer trees
+                        and public green spaces.</p>
+                    <p data-i18n="project.residentsText">Residents know which streets feel hottest, but those experiences are rarely combined with
+                        detailed measurements. This project will connect that local insight with a systematic research
+                        approach.</p>
+                    <h3 data-i18n="project.whatTitle">What we will do</h3>
+                    <ul class="check-list">
+                        <li data-i18n="project.objective1">Invite citizens to identify hot spots and take part in measurement activities.</li>
+                        <li data-i18n="project.objective2">Collect temperature readings across different Turin neighbourhoods.</li>
+                        <li data-i18n="project.objective3">Analyse the data with residents to identify practical cooling opportunities.</li>
+                    </ul>
+                </div>
+                <div class="overview-image">
+                    <img src="https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=1000&q=85"
+                        data-i18n-alt="project.overviewImageAlt"
+                        alt="Aerial view of a leafy urban neighbourhood">
+                </div>
+            </div>
+            <div class="impact-grid">
+                <article class="impact-card">
+                    <span class="impact-number">01</span>
+                    <h3 data-i18n="project.impact1Title">Better evidence</h3>
+                    <p data-i18n="project.impact1Text">Open, neighbourhood-level data will help make heat patterns visible and understandable.</p>
+                </article>
+                <article class="impact-card">
+                    <span class="impact-number">02</span>
+                    <h3 data-i18n="project.impact2Title">Healthier streets</h3>
+                    <p data-i18n="project.impact2Text">Findings can inform choices about shade, planting and public spaces that make streets more
+                        comfortable.</p>
+                </article>
+                <article class="impact-card">
+                    <span class="impact-number">03</span>
+                    <h3 data-i18n="project.impact3Title">Shared action</h3>
+                    <p data-i18n="project.impact3Text">Residents and researchers will build knowledge together and turn it into local conversations.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section funds-section content-section" id="funds">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.fundsEyebrow">PLANNED ALLOCATION</p>
+                <h2 data-i18n="project.fundsTitle">How the funds will be used</h2>
+                <p class="section-intro" data-i18n="project.fundsIntro">These percentages show the planned allocation of the €12,000 funding goal.
+                </p>
+            </div>
+            <div class="budget-list">
+                <article class="budget-item">
+                    <div class="budget-label"><strong data-i18n="project.budget1Title">Temperature sensors and research equipment</strong><span>50%</span></div>
+                    <div class="budget-track"><div class="budget-fill budget-half"></div></div>
+                    <p data-i18n="project.budget1Text">Equipment for reliable measurements in streets and public spaces.</p>
+                </article>
+                <article class="budget-item">
+                    <div class="budget-label"><strong data-i18n="project.budget2Title">Data analysis and research activities</strong><span>30%</span></div>
+                    <div class="budget-track"><div class="budget-fill budget-third"></div></div>
+                    <p data-i18n="project.budget2Text">Analysis, mapping and the coordination of the research process.</p>
+                </article>
+                <article class="budget-item">
+                    <div class="budget-label"><strong data-i18n="project.budget3Title">Community workshops and dissemination</strong><span>20%</span></div>
+                    <div class="budget-track"><div class="budget-fill budget-fifth"></div></div>
+                    <p data-i18n="project.budget3Text">Workshops, accessible materials and sharing results with the community.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section content-section" id="team">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.teamEyebrow">THE PEOPLE BEHIND THE PROJECT</p>
+                <h2 data-i18n="project.teamTitle">Research team</h2>
+                <p class="section-intro" data-i18n="project.teamIntro">A fictional project team illustrating the different skills needed to deliver
+                    this research.</p>
+            </div>
+            <div class="team-grid">
+                <article class="team-card">
+                    <div class="avatar" aria-hidden="true">EC</div>
+                    <h3 data-i18n="project.member1Name">Elena Conti</h3>
+                    <p class="team-role" data-i18n="project.member1Role">Project coordinator</p>
+                    <p data-i18n="project.member1Text">Coordinates the research plan and works with neighbourhood groups to shape the fieldwork.</p>
+                </article>
+                <article class="team-card">
+                    <div class="avatar" aria-hidden="true">MR</div>
+                    <h3 data-i18n="project.member2Name">Marco Rinaldi</h3>
+                    <p class="team-role" data-i18n="project.member2Role">Environmental data specialist</p>
+                    <p data-i18n="project.member2Text">Designs the measurement protocol and turns temperature readings into clear visual maps.</p>
+                </article>
+                <article class="team-card">
+                    <div class="avatar" aria-hidden="true">AS</div>
+                    <h3 data-i18n="project.member3Name">Aisha Serra</h3>
+                    <p class="team-role" data-i18n="project.member3Role">Community engagement lead</p>
+                    <p data-i18n="project.member3Text">Creates inclusive workshops so residents can contribute observations and discuss the findings.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section updates-section content-section" id="updates">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.newsEyebrow">PROJECT NEWS</p>
+                <h2 data-i18n="project.newsTitle">News &amp; Updates</h2>
+                <p class="section-intro" data-i18n="project.newsIntro">Follow the activities and discoveries made during the campaign.</p>
+            </div>
+            <div class="updates-grid">
+                <article class="update-card">
+                    <p class="update-date" data-i18n="project.news1Date">12 October 2026</p>
+                    <h3 data-i18n="project.news1Title">Residents help select the first measurement streets</h3>
+                    <p data-i18n="project.news1Text">Neighbourhood conversations highlighted shaded routes, busy crossings and courtyards where
+                        heat is felt most strongly. These observations will guide the first field sessions.</p>
+                </article>
+                <article class="update-card">
+                    <p class="update-date" data-i18n="project.news2Date">28 September 2026</p>
+                    <h3 data-i18n="project.news2Title">Our measurement kit is ready</h3>
+                    <p data-i18n="project.news2Text">The team has prepared the first set of portable sensors and a simple guide for participants.
+                        Training sessions will begin with local community groups next month.</p>
+                </article>
+                <article class="update-card">
+                    <p class="update-date" data-i18n="project.news3Date">9 September 2026</p>
+                    <h3 data-i18n="project.news3Title">Cool Streets campaign launches</h3>
+                    <p data-i18n="project.news3Text">The project is now inviting people across Turin to share their experience of hot streets and
+                        help build a more detailed picture of the city's summer climate.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section content-section comments-section" id="comments">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.commentsEyebrow">MESSAGES FROM SUPPORTERS</p>
+                <h2 data-i18n="project.commentsTitle">Comments</h2>
+                <p class="section-intro" data-i18n="project.commentsIntro">Supporters share why this research matters to them.</p>
+            </div>
+            <div class="comments-list">
+                <article class="comment-card">
+                    <div class="comment-header"><h3>Laura Bianchi</h3><time data-i18n="project.comment1Date">18 October 2026</time></div>
+                    <p data-i18n="project.comment1Text">“An excellent initiative! Understanding how temperatures vary across our neighbourhoods is essential for building healthier cities.”</p>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-header"><h3>Marco Rossi</h3><time data-i18n="project.comment2Date">14 October 2026</time></div>
+                    <p data-i18n="project.comment2Text">“Happy to support research that involves citizens directly. Looking forward to seeing the results!”</p>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-header"><h3>Elena Ferrero</h3><time data-i18n="project.comment3Date">7 October 2026</time></div>
+                    <p data-i18n="project.comment3Text">“Climate adaptation is becoming increasingly important. I hope this project inspires other cities too.”</p>
+                </article>
+                <article class="comment-card">
+                    <div class="comment-header"><h3>Andrea Conti</h3><time data-i18n="project.comment4Date">30 September 2026</time></div>
+                    <p data-i18n="project.comment4Text">“Great idea! More green and cooler public spaces would make a real difference in Turin.”</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="project-section supporters-section content-section" id="supporters">
+            <div class="section-heading">
+                <p class="eyebrow" data-i18n="project.supportersEyebrow">COMMUNITY SUPPORT</p>
+                <h2 data-i18n="project.supportersTitle">Supporters</h2>
+                <p class="section-intro" data-i18n="project.supportersIntro">These fictional supporters have helped fund the research. Contribution amounts are illustrative.</p>
+            </div>
+            <div class="supporters-grid">
+                <span class="supporter-name">Giulia Ferri</span>
+                <span class="supporter-name">Luca Romano</span>
+                <span class="supporter-name">Sofia Gallo</span>
+                <span class="supporter-name">Davide Esposito</span>
+                <span class="supporter-name">Chiara Martini</span>
+                <span class="supporter-name">Paolo Serra</span>
+                <span class="supporter-name">Marta De Luca</span>
+                <span class="supporter-name">Tommaso Riva</span>
+            </div>
+        </section>
+
+        <section class="donation-section" id="donation" aria-labelledby="donation-title">
+            <div class="donation-content">
+                <p class="eyebrow" data-i18n="project.donationEyebrow">SUPPORT RESEARCH</p>
+                <h2 id="donation-title" data-i18n="project.donationTitle">Help make Turin's streets cooler</h2>
+                <p data-i18n="project.donationText">Your contribution helps citizens and researchers collect the evidence needed for healthier
+                    neighbourhoods.</p>
+                <div class="contribution-options" role="group" data-i18n-aria-label="project.chooseAmount" aria-label="Choose a contribution amount">
+                    <button type="button" class="amount-button" data-amount="10">€10</button>
+                    <button type="button" class="amount-button" data-amount="25">€25</button>
+                    <button type="button" class="amount-button" data-amount="50">€50</button>
+                </div>
+                <p class="selected-contribution" id="selectedContribution" data-i18n="project.chooseAmountText">Choose an amount to continue.</p>
+                <a href="#checkout-placeholder" class="primary-button donation-button" data-i18n="project.continueDonation">Continue to donation</a>
+                <span id="checkout-placeholder" class="checkout-note" data-i18n="project.checkoutNote">Donation checkout will be available in the next step.</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">Idea Ginger</a>
+                <p data-i18n="footer.about">Crowdfunding for research, innovation and community participation.</p>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.explore">Explore</h3>
+                <a href="../index.html" data-i18n="nav.home">Home</a>
+                <a href="explore.html" data-i18n="nav.explore">Explore Projects</a>
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#donation" data-i18n="nav.launch">Launch a campaign</a>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.information">Information</h3>
+                <a href="#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="#contact" data-i18n="nav.contact">Contacts</a>
+                <a href="#footer" data-i18n="footer.about">About us</a>
+                <a href="#overview" data-i18n="home.phasesEyebrow">How it works</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p data-i18n="footer.copyright">© 2026 Idea Ginger. All rights reserved.</p>
+            <p><span data-i18n="footer.terms">Terms and conditions</span> · <span data-i18n="footer.privacy">Privacy</span></p>
+        </div>
+    </footer>
+
+    <script src="../js/language.js"></script>
+    <script>
+        const shareButton = document.getElementById("shareProject");
+        const shareFeedback = document.getElementById("shareFeedback");
+
+        shareButton.addEventListener("click", async () => {
+            const language = document.documentElement.lang;
+            const shareData = {
+                title: getTranslation("project.title", language),
+                text: getTranslation("project.subtitle", language),
+                url: window.location.href
+            };
+
+            try {
+                if (navigator.share) {
+                    await navigator.share(shareData);
+                    shareFeedback.dataset.translationKey = "project.shareComplete";
+                    shareFeedback.textContent = getTranslation("project.shareComplete", language);
+                } else {
+                    await navigator.clipboard.writeText(window.location.href);
+                    shareFeedback.dataset.translationKey = "project.shareCopied";
+                    shareFeedback.textContent = getTranslation("project.shareCopied", language);
+                }
+            } catch (error) {
+                if (error.name !== "AbortError") {
+                    shareFeedback.dataset.translationKey = "project.shareError";
+                    shareFeedback.textContent = getTranslation("project.shareError", language);
+                }
+            }
+        });
+
+        const selectedContribution = document.getElementById("selectedContribution");
+        document.querySelectorAll(".amount-button").forEach(button => {
+            button.addEventListener("click", () => {
+                document.querySelectorAll(".amount-button").forEach(option => {
+                    option.classList.remove("selected");
+                });
+                button.classList.add("selected");
+                selectedContribution.dataset.amount = button.dataset.amount;
+                selectedContribution.textContent = getTranslation(
+                    "project.selectedContribution",
+                    document.documentElement.lang
+                ).replace("{amount}", button.dataset.amount);
+            });
+        });
+
+        document.addEventListener("languagechange", event => {
+            if (shareFeedback.dataset.translationKey) {
+                shareFeedback.textContent = getTranslation(
+                    shareFeedback.dataset.translationKey,
+                    event.detail.language
+                );
+            }
+
+            if (selectedContribution.dataset.amount) {
+                selectedContribution.textContent = getTranslation(
+                    "project.selectedContribution",
+                    event.detail.language
+                ).replace("{amount}", selectedContribution.dataset.amount);
+            }
+        });
+    </script>
+</body>
+</html>
