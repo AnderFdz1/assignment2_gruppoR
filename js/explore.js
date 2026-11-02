@@ -170,6 +170,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     projectCards.forEach(card => {
         card.addEventListener("click", event => {
+            if (card.dataset.project === "cool-streets") {
+                return;
+            }
+
             event.preventDefault();
             showToast();
         });
