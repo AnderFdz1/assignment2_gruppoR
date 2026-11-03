@@ -908,6 +908,18 @@ h3 {
 
 /* Responsive */
 
+.confirmation-main { display: grid; min-height: 560px; place-items: center; padding: 55px 6%; background: #f6f7f9; }
+.confirmation-card { max-width: 650px; padding: 55px; background: #fff; border: 1px solid #e6e9ed; border-radius: 10px; text-align: center; box-shadow: 0 8px 25px rgba(35,50,70,.08); }
+.confirmation-icon { display: inline-grid; width: 58px; height: 58px; margin-bottom: 20px; place-items: center; border-radius: 50%; background: #e4f4eb; color: #23764a; font-size: 2rem; font-weight: 800; }
+.confirmation-card > p:not(.eyebrow):not(.lead) { margin-top: 18px; color: #687586; }
+.confirmation-amount { color: #263b55 !important; font-size: 1.2rem; font-weight: 800; }
+.confirmation-actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.secondary-button { padding: 13px 22px; border: 1px solid #cbd3dc; border-radius: 6px; color: #263b55; font-weight: 800; }
+
+@media (max-width: 700px) {
+    .confirmation-card { padding: 35px 22px; }
+}
+
 @media (max-width: 800px) {
     .language-selector {
         margin-left: 5px;

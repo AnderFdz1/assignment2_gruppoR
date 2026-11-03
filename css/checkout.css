@@ -1,0 +1,50 @@
+/* Checkout page */
+.checkout-main { max-width: 1180px; margin: 0 auto; padding: 55px 6% 85px; }
+.checkout-intro { margin-bottom: 30px; }
+.back-link { display: inline-block; margin-bottom: 25px; color: #bd5e4f; font-weight: 700; }
+.checkout-intro h1 { margin-bottom: 8px; }
+.support-layout { display: grid; grid-template-columns: minmax(0, 1fr) 310px; gap: 30px; align-items: start; }
+.support-form, .contribution-summary { background: #fff; border: 1px solid #e6e9ed; border-radius: 10px; }
+.checkout-section { padding: 28px 30px; border-bottom: 1px solid #e6e9ed; }
+.checkout-section h2, .contribution-summary h2 { margin-bottom: 14px; font-size: 1.4rem; }
+.project-summary-title { color: #263b55; font-weight: 800; }
+.project-summary-text, .section-help { color: #687586; font-size: .92rem; }
+.amount-options { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-top: 22px; }
+.amount-choice { min-height: 120px; padding: 15px 12px; border: 2px solid #dfe4e9; border-radius: 7px; background: #fff; color: #263b55; cursor: pointer; font: inherit; text-align: left; }
+.amount-choice:hover, .amount-choice.selected { border-color: #e87567; background: #fff8f5; }
+.amount-choice.selected { box-shadow: 0 0 0 2px rgba(232,117,103,.18); }
+.amount-choice strong, .amount-choice small { display: block; }
+.amount-choice strong { font-size: 1.25rem; margin-bottom: 8px; }
+.amount-choice small { color: #687586; font-size: .8rem; line-height: 1.4; }
+.custom-amount-field { max-width: 250px; margin-top: 18px; }
+.custom-amount-field label, .form-field label { display: block; margin-bottom: 5px; color: #263b55; font-weight: 700; }
+.currency-input { display: flex; align-items: center; border: 1px solid #cbd3dc; border-radius: 5px; }
+.currency-input span { padding-left: 11px; color: #687586; }
+.currency-input input { width: 100%; padding: 10px; border: 0; outline: 0; font: inherit; }
+.minimum-note { margin-top: 15px; color: #687586; font-size: .85rem; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px; }
+.full-field { grid-column: 1 / -1; }
+.form-field input { width: 100%; padding: 11px; border: 1px solid #cbd3dc; border-radius: 5px; font: inherit; }
+.form-field input:focus, .currency-input:focus-within { border-color: #e87567; outline: 2px solid rgba(232,117,103,.2); }
+.form-field input:disabled { background: #f3f5f7; color: #8793a1; }
+.checkbox-row { display: flex; gap: 10px; margin-top: 22px; color: #263b55; cursor: pointer; }
+.checkbox-row input { flex: 0 0 auto; width: 18px; height: 18px; margin-top: 3px; accent-color: #e87567; }
+.checkbox-row strong, .checkbox-row small { display: block; }
+.checkbox-row small { color: #687586; font-size: .82rem; font-weight: 400; }
+.payment-options { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 20px; }
+.payment-choice { display: flex; gap: 10px; padding: 15px; border: 2px solid #dfe4e9; border-radius: 7px; cursor: pointer; }
+.payment-choice:has(input:checked) { border-color: #e87567; background: #fff8f5; }
+.payment-choice input { accent-color: #e87567; }
+.payment-choice strong, .payment-choice small { display: block; }
+.payment-choice small { color: #687586; font-size: .8rem; }
+.prototype-notice { margin-top: 18px; padding: 12px 14px; background: #f3f5f7; color: #526071; font-size: .85rem; }
+.field-error { min-height: 1.35em; margin-top: 5px; color: #b33d36; font-size: .82rem; }
+.submit-button { margin: 25px 30px 30px; cursor: pointer; }
+.contribution-summary { position: sticky; top: 150px; padding: 25px; box-shadow: 0 8px 25px rgba(35,50,70,.08); }
+.summary-project { margin-bottom: 22px; color: #687586; font-size: .9rem; }
+.summary-row, .summary-total { display: flex; justify-content: space-between; gap: 15px; padding: 13px 0; border-top: 1px solid #e6e9ed; }
+.summary-total { color: #263b55; font-size: 1.2rem; font-weight: 800; }
+.summary-change { display: inline-block; margin-top: 8px; color: #bd5e4f; font-size: .88rem; font-weight: 700; }
+.is-hidden { display: none; }
+@media (max-width: 900px) { .support-layout { grid-template-columns: 1fr; } .contribution-summary { position: static; grid-row: 1; } }
+@media (max-width: 650px) { .amount-options, .payment-options, .form-grid { grid-template-columns: 1fr 1fr; } .custom-choice { grid-column: 1 / -1; } .checkout-section { padding: 24px 20px; } .submit-button { margin-left: 20px; margin-right: 20px; } }

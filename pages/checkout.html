@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support a University of Turin research project.">
+    <title data-i18n="support.title">Support this project | Idea Ginger</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkout.css">
+</head>
+<body class="checkout-page">
+    <header class="site-header">
+        <div class="main-header">
+            <div class="header-left">
+                <label class="search-projects">
+                    <span class="search-icon">⌕</span>
+                    <input type="search" class="search-input" data-i18n-placeholder="nav.searchPlaceholder"
+                        data-i18n-aria-label="nav.searchAriaLabel" placeholder="Search for a project"
+                        aria-label="Search for a project">
+                </label>
+                <a href="../index.html#launch-campaign" class="campaign-button" data-i18n="nav.launch">Launch a Campaign</a>
+            </div>
+            <a href="../index.html" class="brand">Idea Ginger</a>
+            <nav class="utility-nav" aria-label="Utility navigation">
+                <a href="../index.html#faq" data-i18n="nav.faq">FAQ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+                <a href="../index.html#services" data-i18n="nav.services">Services</a>
+                <a href="../index.html#login" data-i18n="nav.login">Login</a>
+                <div class="language-selector">
+                    <button class="language-button" type="button" aria-label="Change language" aria-expanded="false">
+                        <span id="current-language">EN</span><span class="language-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" data-language="en">🇬🇧 English</button>
+                        <button type="button" data-language="it">🇮🇹 Italiano</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="section-bar">
+            <nav aria-label="Main sections">
+                <a href="../index.html" data-i18n="nav.home">Home</a>
+                <a href="explore.html" class="active" aria-current="page" data-i18n="nav.explore">Explore Projects</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="checkout-main">
+        <div class="checkout-intro">
+            <a href="project.html#donation" class="back-link">← <span data-i18n="support.back">Back to project</span></a>
+            <p class="eyebrow" data-i18n="support.eyebrow">SUPPORT RESEARCH</p>
+            <h1 data-i18n="support.title">Support this project</h1>
+            <p class="lead" data-i18n="support.subtitle">Choose how much you would like to contribute.</p>
+        </div>
+
+        <div class="support-layout">
+            <form class="support-form" id="supportForm" novalidate>
+                <section class="checkout-section" aria-labelledby="amount-heading">
+                    <h2 id="amount-heading" data-i18n="support.amount">Choose your contribution</h2>
+                    <p class="project-summary-title" data-i18n="support.projectSummary">Cool Streets: Mapping Urban Heat with Citizens</p>
+                    <p class="project-summary-text" data-i18n="support.projectDescription">Help citizens and researchers understand urban heat and design cooler, healthier neighbourhoods in Turin.</p>
+                    <div class="amount-options" role="group" aria-labelledby="amount-heading">
+                        <button type="button" class="amount-choice" data-amount="10"><strong>€10</strong><small data-i18n="support.amount10">Helps provide materials for one community activity.</small></button>
+                        <button type="button" class="amount-choice" data-amount="25"><strong>€25</strong><small data-i18n="support.amount25">Supports a set of temperature measurements.</small></button>
+                        <button type="button" class="amount-choice" data-amount="50"><strong>€50</strong><small data-i18n="support.amount50">Helps analyse and map collected data.</small></button>
+                        <button type="button" class="amount-choice" data-amount="100"><strong>€100</strong><small data-i18n="support.amount100">Supports workshops and sharing results with the community.</small></button>
+                        <button type="button" class="amount-choice custom-choice" data-amount="custom"><strong data-i18n="support.customLabel">Custom amount</strong><small data-i18n="support.customAmount">Or enter another amount</small></button>
+                    </div>
+                    <div class="custom-amount-field is-hidden" id="customAmountWrapper">
+                        <label for="customAmount" data-i18n="support.customLabel">Custom amount</label>
+                        <div class="currency-input"><span aria-hidden="true">€</span><input id="customAmount" type="number" min="5" step="0.01" inputmode="decimal" data-i18n-placeholder="support.customPlaceholder" placeholder="Enter an amount"></div>
+                        <p class="field-error" id="customAmountError" role="alert"></p>
+                    </div>
+                    <p class="minimum-note" data-i18n="support.minimum">Minimum contribution: €5.</p>
+                    <p class="field-error" id="amountError" role="alert"></p>
+                </section>
+
+                <section class="checkout-section" aria-labelledby="personal-heading">
+                    <h2 id="personal-heading" data-i18n="support.personalInfo">Your information</h2>
+                    <p class="section-help" data-i18n="support.emailHelp">Used only for this simulated confirmation.</p>
+                    <div class="form-grid">
+                        <div class="form-field"><label for="firstName" data-i18n="support.firstName">First name</label><input id="firstName" type="text" autocomplete="given-name"><p class="field-error" id="firstNameError" role="alert"></p></div>
+                        <div class="form-field"><label for="lastName" data-i18n="support.lastName">Surname</label><input id="lastName" type="text" autocomplete="family-name"><p class="field-error" id="lastNameError" role="alert"></p></div>
+                        <div class="form-field full-field"><label for="email" data-i18n="support.email">Email address</label><input id="email" type="email" autocomplete="email"><p class="field-error" id="emailError" role="alert"></p></div>
+                    </div>
+                    <label class="checkbox-row"><input id="anonymous" type="checkbox"><span><strong data-i18n="support.anonymous">Make my contribution anonymous</strong><small data-i18n="support.anonymousHelp">Your name and surname are optional and will not be shown publicly. An email is still needed to complete this prototype.</small></span></label>
+                </section>
+
+                <section class="checkout-section" aria-labelledby="payment-heading">
+                    <h2 id="payment-heading" data-i18n="support.payment">Choose a payment method</h2>
+                    <div class="payment-options">
+                        <label class="payment-choice"><input type="radio" name="payment" value="card"><span><strong data-i18n="support.card">Credit or debit card</strong><small data-i18n="support.cardInfo">•••• 1234 (simulated)</small></span></label>
+                        <label class="payment-choice"><input type="radio" name="payment" value="paypal"><span><strong data-i18n="support.paypal">PayPal</strong><small data-i18n="support.paypalInfo">Pay with PayPal (simulated)</small></span></label>
+                    </div>
+                    <p class="field-error" id="paymentError" role="alert"></p>
+                    <p class="prototype-notice" data-i18n="support.prototypeNotice">Prototype only: no payment will be charged and no real payment details are requested.</p>
+                </section>
+
+                <label class="checkbox-row terms-row"><input id="terms" type="checkbox"><span><strong data-i18n="support.terms">I agree to the terms and conditions.</strong><small data-i18n="support.termsHelp">This simulated contribution does not create a real payment.</small></span></label>
+                <p class="field-error" id="termsError" role="alert"></p>
+                <button class="primary-button submit-button" type="submit" data-i18n="support.continue">Continue to confirmation</button>
+            </form>
+
+            <aside class="contribution-summary" aria-labelledby="summary-heading">
+                <h2 id="summary-heading" data-i18n="support.summary">Contribution summary</h2>
+                <p class="summary-project" data-i18n="support.projectSummary">Cool Streets: Mapping Urban Heat with Citizens</p>
+                <div class="summary-row"><span data-i18n="support.selectedAmount">Contribution</span><strong id="summaryAmount">—</strong></div>
+                <div class="summary-total"><span data-i18n="support.total">Total</span><strong id="summaryTotal">—</strong></div>
+                <a href="#amount-heading" class="summary-change" data-i18n="support.change">Change selection</a>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand"><a href="../index.html" class="footer-logo">Idea Ginger</a><p data-i18n="footer.about">Crowdfunding for research, innovation and community participation.</p></div>
+            <div class="footer-column"><h3 data-i18n="footer.explore">Explore</h3><a href="../index.html" data-i18n="nav.home">Home</a><a href="explore.html" data-i18n="nav.explore">Explore Projects</a></div>
+            <div class="footer-column"><h3 data-i18n="footer.information">Information</h3><a href="../index.html#faq" data-i18n="nav.faq">FAQ</a><a href="../index.html#contact" data-i18n="nav.contact">Contact</a></div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 Idea Ginger. All rights reserved.</p><p data-i18n="footer.terms">Terms and conditions</p></div>
+    </footer>
+    <script src="../js/language.js"></script>
+    <script src="../js/checkout.js"></script>
+</body>
+</html>

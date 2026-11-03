@@ -298,8 +298,7 @@
                     <button type="button" class="amount-button" data-amount="50">€50</button>
                 </div>
                 <p class="selected-contribution" id="selectedContribution" data-i18n="project.chooseAmountText">Choose an amount to continue.</p>
-                <a href="#checkout-placeholder" class="primary-button donation-button" data-i18n="project.continueDonation">Continue to donation</a>
-                <span id="checkout-placeholder" class="checkout-note" data-i18n="project.checkoutNote">Donation checkout will be available in the next step.</span>
+                <a href="checkout.html" class="primary-button donation-button" data-i18n="project.continueDonation">Continue to donation</a>
             </div>
         </section>
     </main>
@@ -374,6 +373,7 @@
                     "project.selectedContribution",
                     document.documentElement.lang
                 ).replace("{amount}", button.dataset.amount);
+                document.querySelector(".donation-button").href = `checkout.html?amount=${button.dataset.amount}`;
             });
         });
 
