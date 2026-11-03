@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply to launch a research crowdfunding campaign with Funds TOgether.">
+    <title data-i18n="launch.pageTitle">Launch a campaign | Idea Ginger</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/launch.css">
+</head>
+<body class="launch-page">
+    <header class="site-header">
+        <div class="main-header">
+            <div class="header-left">
+                <label class="search-projects">
+                    <span class="search-icon">⌕</span>
+                    <input type="search" class="search-input" data-i18n-placeholder="nav.searchPlaceholder"
+                        data-i18n-aria-label="nav.searchAriaLabel" placeholder="Search for a project"
+                        aria-label="Search for a project">
+                </label>
+                <a href="launch.html" class="campaign-button" data-i18n="nav.launch">Launch a Campaign</a>
+            </div>
+            <a href="../index.html" class="brand">Idea Ginger</a>
+            <nav class="utility-nav" aria-label="Utility navigation">
+                <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+                <a href="../index.html#services" data-i18n="nav.services">Services</a>
+                <a href="../index.html#login" data-i18n="nav.login">Login</a>
+                <div class="language-selector">
+                    <button class="language-button" type="button" aria-label="Change language" aria-expanded="false">
+                        <span id="current-language">EN</span><span class="language-arrow" aria-hidden="true">▾</span>
+                    </button>
+                    <div class="language-dropdown">
+                        <button type="button" data-language="en">🇬🇧 English</button>
+                        <button type="button" data-language="it">🇮🇹 Italiano</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="launch-main">
+        <div class="launch-intro">
+            <a href="../index.html" class="back-link">← <span data-i18n="launch.back">Back to home</span></a>
+            <p class="eyebrow" data-i18n="launch.eyebrow">LAUNCH A CAMPAIGN</p>
+            <h1 data-i18n="launch.title">Turn your research into a campaign</h1>
+            <p class="lead" data-i18n="launch.subtitle">Tell us about your project and your team. We will review your application and help you take the next step.</p>
+        </div>
+
+        <div class="launch-layout" id="launchLayout">
+            <form class="launch-form" id="launchForm" novalidate>
+
+                <section class="launch-section" aria-labelledby="applicant-heading">
+                    <div class="section-header">
+                        <span class="section-step" aria-hidden="true">01</span>
+                        <div>
+                            <h2 id="applicant-heading" data-i18n="launch.applicantTitle">Applicant details</h2>
+                            <p class="section-help" data-i18n="launch.applicantIntro">The person we should contact about this application.</p>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="firstName" data-i18n="launch.firstName">First name</label>
+                            <input id="firstName" type="text" autocomplete="given-name">
+                            <p class="field-error" id="firstNameError" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName" data-i18n="launch.lastName">Surname</label>
+                            <input id="lastName" type="text" autocomplete="family-name">
+                            <p class="field-error" id="lastNameError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="email" data-i18n="launch.email">Email address</label>
+                            <input id="email" type="email" autocomplete="email">
+                            <p class="field-error" id="emailError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="role" data-i18n="launch.role">Role or position (optional)</label>
+                            <input id="role" type="text" autocomplete="organization-title"
+                                data-i18n-placeholder="launch.rolePlaceholder" placeholder="e.g. Research fellow">
+                            <p class="field-error" id="roleError" role="alert"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="launch-section" aria-labelledby="project-heading">
+                    <div class="section-header">
+                        <span class="section-step" aria-hidden="true">02</span>
+                        <div>
+                            <h2 id="project-heading" data-i18n="launch.projectTitle">The project</h2>
+                            <p class="section-help" data-i18n="launch.projectIntro">Give us a clear picture of your idea and what it needs to get started.</p>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field">
+                            <label for="campaignTitle" data-i18n="launch.campaignTitle">Campaign title</label>
+                            <input id="campaignTitle" type="text" data-i18n-placeholder="launch.campaignTitlePlaceholder"
+                                placeholder="A short, memorable name for your campaign">
+                            <p class="field-error" id="campaignTitleError" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="projectCategory" data-i18n="launch.category">Category</label>
+                            <select id="projectCategory">
+                                <option value="" data-i18n="launch.categoryPlaceholder">Select a category</option>
+                                <option value="research" data-i18n="launch.categoryResearch">Research</option>
+                                <option value="innovation" data-i18n="launch.categoryInnovation">Innovation</option>
+                                <option value="community" data-i18n="launch.categoryCommunity">Community</option>
+                                <option value="education" data-i18n="launch.categoryEducation">Education</option>
+                                <option value="health" data-i18n="launch.categoryHealth">Health</option>
+                                <option value="culture" data-i18n="launch.categoryCulture">Culture</option>
+                            </select>
+                            <p class="field-error" id="projectCategoryError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="projectDescription" data-i18n="launch.description">Short description</label>
+                            <p class="field-help" data-i18n="launch.descriptionHelp">Explain your idea in a few sentences: what you want to do and why it matters.</p>
+                            <textarea id="projectDescription" rows="5" maxlength="800"></textarea>
+                            <p class="field-error" id="projectDescriptionError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="fundingGoal" data-i18n="launch.amount">Amount of money needed (€)</label>
+                            <div class="amount-input">
+                                <span aria-hidden="true">€</span>
+                                <input id="fundingGoal" type="number" min="500" step="100" inputmode="decimal"
+                                    data-i18n-placeholder="launch.amountPlaceholder" placeholder="12000">
+                            </div>
+                            <p class="field-help" data-i18n="launch.amountHelp">The funding goal you would like to reach with your campaign. Minimum €500.</p>
+                            <p class="field-error" id="fundingGoalError" role="alert"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="launch-section" aria-labelledby="team-heading">
+                    <div class="section-header">
+                        <span class="section-step" aria-hidden="true">03</span>
+                        <div>
+                            <h2 id="team-heading" data-i18n="launch.teamTitle">The team</h2>
+                            <p class="section-help" data-i18n="launch.teamIntro">Tell us who will lead the campaign and what experience you bring.</p>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field full-field">
+                            <label for="teamDescription" data-i18n="launch.teamDescription">Description of the team</label>
+                            <textarea id="teamDescription" rows="4"></textarea>
+                            <p class="field-error" id="teamDescriptionError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="teamExperience" data-i18n="launch.teamExperience">Team experience</label>
+                            <p class="field-help" data-i18n="launch.teamExperienceHelp">Describe relevant research, project management, communication or fundraising experience.</p>
+                            <textarea id="teamExperience" rows="4"></textarea>
+                            <p class="field-error" id="teamExperienceError" role="alert"></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="launch-section" aria-labelledby="extra-heading">
+                    <div class="section-header">
+                        <span class="section-step" aria-hidden="true">04</span>
+                        <div>
+                            <h2 id="extra-heading" data-i18n="launch.extraTitle">Additional information</h2>
+                            <p class="section-help" data-i18n="launch.extraIntro">Anything else we should know about your project or your plans.</p>
+                        </div>
+                    </div>
+                    <div class="form-grid">
+                        <div class="form-field full-field">
+                            <label for="additionalInfo" data-i18n="launch.extraLabel">Additional notes (optional)</label>
+                            <textarea id="additionalInfo" rows="4"
+                                data-i18n-placeholder="launch.extraPlaceholder"
+                                placeholder="Partners, previous campaigns, timeline, impact..."></textarea>
+                        </div>
+                    </div>
+                    <label class="checkbox-row">
+                        <input id="terms" type="checkbox">
+                        <span>
+                            <strong data-i18n="launch.terms">I confirm that the information provided is correct.</strong>
+                            <small data-i18n="launch.termsHelp">This prototype does not send a real application.</small>
+                        </span>
+                    </label>
+                    <p class="field-error" id="termsError" role="alert"></p>
+                </section>
+
+                <p class="prototype-notice" data-i18n="launch.prototypeNotice">Prototype only: this form does not send data and no real application will be created.</p>
+                <button class="launch-submit" type="submit" data-i18n="launch.submit">Apply</button>
+            </form>
+
+            <aside class="launch-aside" aria-labelledby="checklist-heading">
+                <div class="launch-aside-card">
+                    <h2 id="checklist-heading" data-i18n="launch.asideChecklistTitle">Before you apply</h2>
+                    <ul class="checklist">
+                        <li data-i18n="launch.asideChecklist1">A clear description of your project and its goal.</li>
+                        <li data-i18n="launch.asideChecklist2">A realistic funding target for your campaign.</li>
+                        <li data-i18n="launch.asideChecklist3">A team ready to communicate and engage supporters.</li>
+                        <li data-i18n="launch.asideChecklist4">A contact email we can use to get back to you.</li>
+                    </ul>
+                </div>
+                <div class="launch-aside-card">
+                    <h2 data-i18n="launch.asideHelpTitle">Need help?</h2>
+                    <p data-i18n="launch.asideHelpText">The Ginger team supports selected projects throughout the campaign, from training to communication.</p>
+                    <a href="../index.html#contact" class="aside-link" data-i18n="launch.asideContact">Contact the campaign team</a>
+                </div>
+            </aside>
+        </div>
+
+        <section class="launch-success" id="launchSuccess" aria-live="polite" hidden>
+            <span class="launch-success-icon" aria-hidden="true">✓</span>
+            <p class="eyebrow" data-i18n="launch.successEyebrow">APPLICATION RECEIVED</p>
+            <h2 data-i18n="launch.successTitle">Your application was accepted</h2>
+            <p class="lead" data-i18n="launch.successMessage">Thank you for sharing your project with us. Our team will review your application and contact you at the email address you provided.</p>
+            <p class="launch-success-note" data-i18n="launch.successNote">This is a test site: no real application was sent.</p>
+            <div class="launch-success-actions">
+                <a href="../index.html" data-i18n="launch.backHome">Back to Home</a>
+                <a href="explore.html" data-i18n="launch.explore">Explore projects</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="../index.html" class="footer-logo">Idea Ginger</a>
+                <p data-i18n="footer.about">Crowdfunding for research, innovation and community participation.</p>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.explore">Explore</h3>
+                <a href="../index.html" data-i18n="nav.home">Home</a>
+                <a href="explore.html" data-i18n="nav.explore">Explore Projects</a>
+                <a href="launch.html" data-i18n="nav.launch">Launch a campaign</a>
+            </div>
+            <div class="footer-column">
+                <h3 data-i18n="footer.information">Information</h3>
+                <a href="faq.html" data-i18n="nav.faq">FAQ</a>
+                <a href="../index.html#contact" data-i18n="nav.contact">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Idea Ginger. All rights reserved.</p>
+            <p data-i18n="footer.terms">Terms and conditions</p>
+        </div>
+    </footer>
+    <script src="../js/language.js"></script>
+    <script src="../js/launch.js"></script>
+</body>
+</html>
