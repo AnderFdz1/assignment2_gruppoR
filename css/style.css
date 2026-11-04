@@ -170,6 +170,52 @@ h3 {
     filter: brightness(0) invert(1);
 }
 
+/* Search shortcut: styled like the campaign button, but links to Explore */
+
+.search-projects.search-link {
+    width: auto;
+    padding: 11px 17px;
+
+    border: 0;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #b85e00;
+
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.search-projects.search-link:hover {
+    background-color: #fff3e2;
+    transform: translateY(-1px);
+}
+
+.search-projects.search-link:focus-visible {
+    outline: 2px solid #ffffff;
+    outline-offset: 2px;
+}
+
+.search-link {
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.search-link .search-icon {
+    color: #b85e00;
+    font-size: 1.15rem;
+}
+
+.search-link .search-label {
+    flex: 1 1 auto;
+    overflow: hidden;
+    color: #b85e00;
+    font-weight: 700;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 /* Campaign button */
 
 .campaign-button {
@@ -925,4 +971,26 @@ h3 {
     .language-selector {
         margin-left: 5px;
     }
+}
+
+/* =========================================
+   INACTIVE / PLACEHOLDER LINKS
+========================================= */
+
+.link-inactive {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.utility-nav a.link-inactive,
+.utility-nav a.link-inactive:hover {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+
+.footer-column a.link-inactive,
+.footer-column a.link-inactive:hover {
+    color: #c5ced8;
+    opacity: 0.45;
+    cursor: not-allowed;
 }

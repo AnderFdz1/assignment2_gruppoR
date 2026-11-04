@@ -1178,3 +1178,17 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+/* =========================================
+   INACTIVE / PLACEHOLDER LINKS
+========================================= */
+
+// Placeholder links are shown as disabled and must not navigate anywhere.
+document.addEventListener("click", event => {
+    const inactiveLink = event.target.closest?.("a.link-inactive");
+
+    if (inactiveLink) {
+        event.preventDefault();
+    }
+});
