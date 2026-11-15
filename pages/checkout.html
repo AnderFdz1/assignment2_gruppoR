@@ -69,7 +69,10 @@
                     </div>
                     <div class="custom-amount-field is-hidden" id="customAmountWrapper">
                         <label for="customAmount" data-i18n="support.customLabel">Custom amount</label>
-                        <div class="currency-input"><span aria-hidden="true">€</span><input id="customAmount" type="number" min="5" step="0.01" inputmode="decimal" data-i18n-placeholder="support.customPlaceholder" placeholder="Enter an amount"></div>
+                        <div class="currency-input">
+                            <span aria-hidden="true">€</span>
+                            <input id="customAmount" type="number" min="5" step="0.01" inputmode="decimal" data-i18n-placeholder="support.customPlaceholder" placeholder="Enter an amount">
+                        </div>
                         <p class="field-error" id="customAmountError" role="alert"></p>
                     </div>
                     <p class="minimum-note" data-i18n="support.minimum">Minimum contribution: €5.</p>
@@ -80,9 +83,21 @@
                     <h2 id="personal-heading" data-i18n="support.personalInfo">Your information</h2>
                     <p class="section-help" data-i18n="support.emailHelp">Used only for this simulated confirmation.</p>
                     <div class="form-grid">
-                        <div class="form-field"><label for="firstName" data-i18n="support.firstName">First name</label><input id="firstName" type="text" autocomplete="given-name"><p class="field-error" id="firstNameError" role="alert"></p></div>
-                        <div class="form-field"><label for="lastName" data-i18n="support.lastName">Surname</label><input id="lastName" type="text" autocomplete="family-name"><p class="field-error" id="lastNameError" role="alert"></p></div>
-                        <div class="form-field full-field"><label for="email" data-i18n="support.email">Email address</label><input id="email" type="email" autocomplete="email"><p class="field-error" id="emailError" role="alert"></p></div>
+                        <div class="form-field">
+                            <label for="firstName" data-i18n="support.firstName">First name</label>
+                            <input id="firstName" type="text" autocomplete="given-name">
+                            <p class="field-error" id="firstNameError" role="alert"></p>
+                        </div>
+                        <div class="form-field">
+                            <label for="lastName" data-i18n="support.lastName">Surname</label>
+                            <input id="lastName" type="text" autocomplete="family-name">
+                            <p class="field-error" id="lastNameError" role="alert"></p>
+                        </div>
+                        <div class="form-field full-field">
+                            <label for="email" data-i18n="support.email">Email address</label>
+                            <input id="email" type="email" autocomplete="email">
+                            <p class="field-error" id="emailError" role="alert"></p>
+                        </div>
                     </div>
                     <div class="checkbox-row">
                         <input id="anonymous" type="checkbox">
@@ -97,18 +112,30 @@
                     <h2 id="payment-heading" data-i18n="support.payment">Choose a payment method</h2>
                     <fieldset class="payment-options">
                         <legend class="visually-hidden">Choose a payment method</legend>
-                        <label class="payment-choice">
-                            <input type="radio" name="payment" value="card">
+
+                        <label class="payment-choice" for="payment-card">
+                            <input
+                                id="payment-card"
+                                type="radio"
+                                name="payment"
+                                value="card"
+                                aria-labelledby="payment-card-label payment-card-info">
                             <span>
-                                <strong data-i18n="support.card">Credit or debit card</strong>
-                                <small data-i18n="support.cardInfo">•••• 1234 (simulated)</small>
+                                <strong id="payment-card-label" data-i18n="support.card">Credit or debit card</strong>
+                                <small id="payment-card-info" data-i18n="support.cardInfo">•••• 1234 (simulated)</small>
                             </span>
                         </label>
-                        <label class="payment-choice">
-                            <input type="radio" name="payment" value="paypal">
+
+                        <label class="payment-choice" for="payment-paypal">
+                            <input
+                                id="payment-paypal"
+                                type="radio"
+                                name="payment"
+                                value="paypal"
+                                aria-labelledby="payment-paypal-label payment-paypal-info">
                             <span>
-                                <strong data-i18n="support.paypal">PayPal</strong>
-                                <small data-i18n="support.paypalInfo">Pay with PayPal (simulated)</small>
+                                <strong id="payment-paypal-label" data-i18n="support.paypal">PayPal</strong>
+                                <small id="payment-paypal-info" data-i18n="support.paypalInfo">Pay with PayPal (simulated)</small>
                             </span>
                         </label>
                     </fieldset>
@@ -130,8 +157,14 @@
             <aside class="contribution-summary" aria-labelledby="summary-heading">
                 <h2 id="summary-heading" data-i18n="support.summary">Contribution summary</h2>
                 <p class="summary-project" data-i18n="support.projectSummary">Cool Streets: Mapping Urban Heat with Citizens</p>
-                <div class="summary-row"><span data-i18n="support.selectedAmount">Contribution</span><strong id="summaryAmount">—</strong></div>
-                <div class="summary-total"><span data-i18n="support.total">Total</span><strong id="summaryTotal">—</strong></div>
+                <div class="summary-row">
+                    <span data-i18n="support.selectedAmount">Contribution</span>
+                    <strong id="summaryAmount">—</strong>
+                </div>
+                <div class="summary-total">
+                    <span data-i18n="support.total">Total</span>
+                    <strong id="summaryTotal">—</strong>
+                </div>
                 <a href="#amount-heading" class="summary-change" data-i18n="support.change">Change selection</a>
             </aside>
         </div>
@@ -171,6 +204,7 @@
             <p>© 2013–2026 Idea Ginger</p>
         </div>
     </footer>
+
     <script src="../js/language.js"></script>
     <script src="../js/checkout.js"></script>
 </body>
