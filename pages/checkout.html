@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -83,20 +84,45 @@
                         <div class="form-field"><label for="lastName" data-i18n="support.lastName">Surname</label><input id="lastName" type="text" autocomplete="family-name"><p class="field-error" id="lastNameError" role="alert"></p></div>
                         <div class="form-field full-field"><label for="email" data-i18n="support.email">Email address</label><input id="email" type="email" autocomplete="email"><p class="field-error" id="emailError" role="alert"></p></div>
                     </div>
-                    <label class="checkbox-row"><input id="anonymous" type="checkbox"><span><strong data-i18n="support.anonymous">Make my contribution anonymous</strong><small data-i18n="support.anonymousHelp">Your name and surname are optional and will not be shown publicly. An email is still needed to complete this prototype.</small></span></label>
+                    <div class="checkbox-row">
+                        <input id="anonymous" type="checkbox">
+                        <label for="anonymous">
+                            <strong data-i18n="support.anonymous">Make my contribution anonymous</strong>
+                            <small data-i18n="support.anonymousHelp">Your name and surname are optional and will not be shown publicly. An email is still needed to complete this prototype.</small>
+                        </label>
+                    </div>
                 </section>
 
                 <section class="checkout-section" aria-labelledby="payment-heading">
                     <h2 id="payment-heading" data-i18n="support.payment">Choose a payment method</h2>
-                    <div class="payment-options">
-                        <label class="payment-choice"><input type="radio" name="payment" value="card"><span><strong data-i18n="support.card">Credit or debit card</strong><small data-i18n="support.cardInfo">•••• 1234 (simulated)</small></span></label>
-                        <label class="payment-choice"><input type="radio" name="payment" value="paypal"><span><strong data-i18n="support.paypal">PayPal</strong><small data-i18n="support.paypalInfo">Pay with PayPal (simulated)</small></span></label>
-                    </div>
+                    <fieldset class="payment-options">
+                        <legend class="visually-hidden">Choose a payment method</legend>
+                        <label class="payment-choice">
+                            <input type="radio" name="payment" value="card">
+                            <span>
+                                <strong data-i18n="support.card">Credit or debit card</strong>
+                                <small data-i18n="support.cardInfo">•••• 1234 (simulated)</small>
+                            </span>
+                        </label>
+                        <label class="payment-choice">
+                            <input type="radio" name="payment" value="paypal">
+                            <span>
+                                <strong data-i18n="support.paypal">PayPal</strong>
+                                <small data-i18n="support.paypalInfo">Pay with PayPal (simulated)</small>
+                            </span>
+                        </label>
+                    </fieldset>
                     <p class="field-error" id="paymentError" role="alert"></p>
                     <p class="prototype-notice" data-i18n="support.prototypeNotice">Prototype only: no payment will be charged and no real payment details are requested.</p>
                 </section>
 
-                <label class="checkbox-row terms-row"><input id="terms" type="checkbox"><span><strong data-i18n="support.terms">I agree to the terms and conditions.</strong><small data-i18n="support.termsHelp">This simulated contribution does not create a real payment.</small></span></label>
+                <div class="checkbox-row terms-row">
+                    <input id="terms" type="checkbox">
+                    <label for="terms">
+                        <strong data-i18n="support.terms">I agree to the terms and conditions.</strong>
+                        <small data-i18n="support.termsHelp">This simulated contribution does not create a real payment.</small>
+                    </label>
+                </div>
                 <p class="field-error" id="termsError" role="alert"></p>
                 <button class="primary-button submit-button" type="submit" data-i18n="support.continue">Confirm donation</button>
             </form>
